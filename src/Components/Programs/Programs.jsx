@@ -1,5 +1,5 @@
 import React from "react";
-// import Data from '../../data.txt';
+import ProgramsList from "../ProgramsList/ProgramsList";
 import "./programs.css";
 import options from './sa.JPG';
 
@@ -47,9 +47,9 @@ const Programs = () => {
             </div>
 
         </div>
-        <div className="row pt-2">
+        <div className="row pt-2 pb-5">
             <div className="col-xl-2 col-md-3 p-0 d-none d-md-block">
-                <select class="form-select w-100 selection-item" aria-label="Default select example">
+            <select class="form-select w-100 selection-item" aria-label="Default select example">
                     <option selected>Open this select menu</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
@@ -59,7 +59,7 @@ const Programs = () => {
             <div className="col-xl-10 col-md-9 col-12">
                 <div className="row">
                     <div className="col-xl-8 col-md-6 col-12 ps-md-0 px-0">
-                            <select class="form-select w-100 selection-gray selection-item" aria-label="Default select example">
+                    <select class="form-select w-100 selection-gray selection-item" aria-label="Default select example">
                             <option selected>Open this select menu</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
@@ -80,33 +80,75 @@ const Programs = () => {
 
             <div className="row d-flex justify-content-between">
                 <div className="col-xl-2 col-md-3 d-none d-md-block">
-                    <div className="radio-group w-100 pt-2">
-                    <form className="d-flex flex-column align-items-start ">
-                                <p className="radio-head">Language:</p>
-                                <p className="radio-line"></p>
-                            
-                             <div className="radio">
-                                <input type="radio" id="html" name="fav_language" value="CSS" />
-                                <label className="p-2" htmlFor="html">html</label>
-                             </div>
-                             <div className="radio">
-                                <input type="radio" id="css" name="fav_language" value="CSS" />
-                                <label className="p-2" htmlFor="css">CSS</label>
-                             </div>
-                             <div className="radio">
-                                <input type="radio" id="js" name="fav_language" value="js" />
-                                <label className="p-2" htmlFor="js">CSS</label>
-                             </div>
+                        <div className="radio-group w-100 pt-2">
+                                    <form className="d-flex flex-column align-items-start ">
+                                                <p className="radio-head">Language:</p>
+                                                <p className="radio-line"></p>
 
-                             
-                            
+                                            <div className="radio">
+                                                <input type="radio" id="English" name="Language" value="English" />
+                                                <label className="p-2 radio-label" htmlFor="English">English</label>
+                                            </div>
+
+                                            <div className="radio">
+                                                <input type="radio" id="French" name="Language" value="French" />
+                                                <label className="p-2 radio-label" htmlFor="js">CSS</label>
+                                            </div>
+
+                                    </form>    
+                        </div>
+                        <div className="radio-group w-100 pt-2">
+                                    <form className="d-flex flex-column align-items-start ">
+                                                <p className="radio-head">Price Budget:</p>
+                                                <p className="radio-line"></p>
+                                            <div className="radio">
+                                                <input type="radio" id="css" name="sorting" value="CSS" />
+                                                <label className="p-2 radio-label" htmlFor="css">CSS</label>
+                                            </div>
+                                            <div className="radio">
+                                                <input type="radio" id="js" name="sorting" value="js" />
+                                                <label className="p-2 radio-label" htmlFor="js">CSS</label>
+                                            </div>
+                                    </form>    
+                        </div>
+                        <div className="radio-group w-100 pt-2">
+                                    <form className="d-flex flex-column align-items-start ">
+                                                <p className="radio-head">Skill Level:</p>
+                                                <p className="radio-line"></p>
+                                            
+                                            <div className="radio">
+                                                <input type="radio" id="html" name="fav_language" value="CSS" />
+                                                <label className="p-2 radio-label" htmlFor="html">html</label>
+                                            </div>
+                                            <div className="radio">
+                                                <input type="radio" id="css" name="fav_language" value="CSS" />
+                                                <label className="p-2 radio-label" htmlFor="css">CSS</label>
+                                            </div>
+                                            <div className="radio">
+                                                <input type="radio" id="js" name="fav_language" value="js" />
+                                                <label className="p-2 radio-label" htmlFor="js">CSS</label>
+                                            </div>
+                                            <div className="radio">
+                                                <input type="radio" id="js" name="fav_language" value="js" />
+                                                <label className="p-2 radio-label" htmlFor="js">CSS</label>
+                                            </div>
+                                            <div className="radio">
+                                                <input type="radio" id="js" name="fav_language" value="js" />
+                                                <label className="p-2 radio-label" htmlFor="js">CSS</label>
+                                            </div>
+                                    </form>    
+                        </div>
+                </div>
+                <div className="col-xl-10 col-md-9 col-12">
+                    <div className="row p-5 g-5 d-flex justify-content-around">
+                                           
+                                               
+                                                   <ProgramsList />
+                                                    
 
 
-
-                    </form>    
                     </div>
                 </div>
-                <div className="col-xl-10 col-md-9 col-12"></div>
             </div>
         </div>
     </section>
