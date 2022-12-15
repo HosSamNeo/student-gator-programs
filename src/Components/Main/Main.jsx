@@ -1,5 +1,5 @@
 import React from 'react';
-import './main.css';
+import './Main.css';
 import svgAlter from './svg-alter.JPG';
 const Main = () => {
   return (

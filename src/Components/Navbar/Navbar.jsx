@@ -1,7 +1,12 @@
 import React from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
+
+    const handleClick = (e) => {
+        e.preventDefault();
+    }
 
     return (
         <nav className="navbar navbar-expand-lg bg-light">
@@ -13,23 +18,23 @@ function Navbar() {
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item pe-4 px-2 mt-2">
+                <Link to='/home' className="nav-item pe-4 px-2 mt-2 text-decoration-none">
                     <a className="nav-link active" aria-current="page" href="#programs">Home</a>
-                </li>
-                <li className="nav-item pe-4 px-2 mt-2">
+                </Link>
+                <Link to='/about' className="nav-item pe-4 px-2 mt-2 text-decoration-none">
                     <a className="nav-link active" aria-current="page" href="#programs">About</a>
-                </li>
-                <li className="nav-item pe-4 px-2 mt-2">
+                </Link>
+                <Link to='/programs' className="nav-item pe-4 px-2 mt-2 text-decoration-none">
                     <a className="nav-link active" aria-current="page" href="#programs">Programs</a>
-                </li>
-                <li className="nav-item pe-4 px-2 mt-2">
+                </Link>
+                <Link to='/blog' className="nav-item pe-4 px-2 mt-2 text-decoration-none">
                     <a className="nav-link active" aria-current="page" href="#programs">Blogs</a>
-                </li>
+                </Link>
                 
                 </ul>
-                <form className='d-flex justify-between align-center' role="search">
+                <form  onSubmit={handleClick} className='d-flex justify-between align-center' role="search">
                     <a href="#programs"><svg className='search-icon' fill='#6f77f4' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></a>
-                <button className="btn login-btn" href="#programs">Login</button>
+                    <button className="btn login-btn" href="#programs">Login</button>
                 </form>
             </div>
         </div>

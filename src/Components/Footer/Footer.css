@@ -1,0 +1,25 @@
+.footer {
+    background: transparent linear-gradient(118deg, #6F77F4 0%, #FD8282 100%) 0% 0% no-repeat padding-box !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-menu {
+    list-style: none;
+
+}
+
+.footer-menu li {
+    padding: 5px;
+}
+
+.white-line {
+    border: 0.1px solid white;
+    width: 100%;
+}
+
+.copywright {
+    font: normal normal normal 20px/30px Poppins;
+    color: #fff;
+    margin: 0;
+}
